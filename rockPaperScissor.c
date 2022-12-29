@@ -68,9 +68,7 @@ int main() {
 int getRandomChoice() {
     srand(time(NULL)); // if not used the random number will always be the same I don't know why tho
 
-    int verifiedRandomNumber, randonNumber;
-    randonNumber = rand()%(3+1); // + 1 because rand() takes 3 number - 0/1/2 but we want 1/2/3
-    verifiedRandomNumber = randonNumber == 0 ? 1 : randonNumber; // if randomNumber is 0, it will be 1 since rock is 1
-
-    return verifiedRandomNumber;
+    int randonNumber;
+    randonNumber = rand()%(3);
+    return (randomNumber + 1);
 }
